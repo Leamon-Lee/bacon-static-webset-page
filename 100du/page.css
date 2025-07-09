@@ -7,13 +7,13 @@
     width: 70vw;
     min-width: 1024px;
     height: 100vh;
-    background-color: #f4f4f4;
+    
     margin: 0 auto;
 }
 .headBox {
     /* height: 240px; */
     /* background-color: green; */
-
+    background-color: #f4f4f4;
 }
 
 /* { */
@@ -37,7 +37,7 @@
 .main_right {
     width: 20%;
     height: 100%;
-    background-color: rgb(43, 118, 224);
+    /* background-color: rgb(43, 118, 224); */
 }
 .floatStyle {
     float: left;
@@ -883,4 +883,152 @@ th {
     position: relative;
     padding: 10px 30px;
 }
-/* 1213 */
+.Mainbox7 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    
+}
+.mainbox8 {
+    border: 1px solid black;
+    width: 49%;
+    /* height: 480px;  */
+    position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.mainbox9 {
+    border: 1px solid black;
+    width: 49%;
+    /* height: 480px;  */
+}
+.big12 {
+    display: flex;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.textbox16 {
+    position: relative;
+    top: 0;
+    left: 75px;
+}
+.big11 {
+    position: relative;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.big13 {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+.big14 {
+    display: flex;
+}
+.imgbox30 {
+    width: 75px;
+    height: 50px;
+    position: relative;
+    top: 0;
+    left: 100px;
+}
+.minibig1 {
+    display: flex;
+}
+.minibig2 {
+    display: flex;
+}
+.minibig3 {
+    display: flex;
+}
+.minibig4 {
+    display: flex;
+}
+.imgbox31 {
+    width: 85px;
+    height: 50px;
+}
+.imgbox32 {
+    width: 85px;
+    height: 50px; 
+}
+.imgbox33 {
+    width: 85px;
+    height: 50px; 
+}
+.imgbox34 {
+    width: 85px;
+    height: 50px; 
+}
+.mainbox9 {
+    position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.rightbox1 {
+    /* height: 200px; */
+    width: 200px;
+    border: 1px solid black;
+}
+.rightbox1 .rightbox1_head {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 5px;
+    border-bottom: 1px solid black;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+.rightbox1_body {
+    padding-bottom: 8px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    padding: 6px;
+    box-sizing: border-box;
+}
+.inputtext {
+    
+
+}
+.btn2 {
+    width: 45px;
+    height: 20px;
+    border: 1px solid red;
+    border-radius: 10px;
+    text-align: center;
+    background-color: red;
+}
+.rightbox1_foot {
+    display: flex;
+    justify-content: space-around;
+    padding: 6px;
+    box-sizing: border-box;
+}
+.rightbox4 {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
+.rightbox5 {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
+.rightbox6 {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
+.rightbox7 {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
+.rightbox8 {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
