@@ -696,34 +696,28 @@
                             </div>
                         </div>
                         <div class="minibox13">
-                            <div class="big8">
-                                <div class="textbox14">
-                                <span style="color: red;">HOT</span>
-                                <span>红人烧客</span>
+                            <div class="hot-guest-box">
+                                <div class="hot-guest-header">
+                                    <div class="title-box">
+                                        <span class="red-text">HOT</span>
+                                        <span>红人烧客</span>
+                                    </div>
+                                    <img src="./IMG/8_14_03.png" class="title-decoration-img">
                                 </div>
-                                <div class="imgbox26">
-                                    <img src="./IMG/8_14_03.png" width="100%">
+                                <div class="hot-guest-grid">
+                                    <img src="./IMG/10_18.png" alt="红人烧客头像">
+                                    <img src="./IMG/10_20.png" alt="红人烧客头像">
+                                    <img src="./IMG/10_18.png" alt="红人烧客头像">
+                                    <img src="./IMG/10_20.png" alt="红人烧客头像">
+                                    <img src="./IMG/10_31.png" alt="红人烧客头像">
+                                    <img src="./IMG/10_32.png" alt="红人烧客头像">
+                                    <img src="./IMG/10_33.png" alt="红人烧客头像">
+                                    <img src="./IMG/10_35.png" alt="红人烧客头像">
+                                    <img src="./IMG/10_36.png" alt="红人烧客头像">
+                                    <img src="./IMG/10_42.png" alt="红人烧客头像">
+                                    <img src="./IMG/10_43.png" alt="红人烧客头像">
+                                    <img src="./IMG/10_44.png" alt="红人烧客头像">
                                 </div>
-                            </div>
-                            <div class="big9">
-                                <div class="imgbox27">
-                                <img src="./IMG/10_18.png" alt="" width="100%">
-                                <img src="./IMG/10_20.png" alt="" width="100%">
-                                <img src="./IMG/10_18.png" alt="" width="100%">
-                                <img src="./IMG/10_20.png" alt="" width="100%">
-                                </div>
-                                <div class="imgbox28">
-                                <img src="./IMG/10_31.png" alt="" width="100%">
-                                <img src="./IMG/10_32.png" alt="" width="100%">
-                                <img src="./IMG/10_33.png" alt="" width="100%">
-                                <img src="./IMG/10_35.png" alt="" width="100%">
-                                </div>
-                                <div class="imgbox29">
-                                <img src="./IMG/10_36.png" alt="" width="100%">
-                                <img src="./IMG/10_42.png" alt="" width="100%">
-                                <img src="./IMG/10_43.png" alt="" width="100%">
-                                <img src="./IMG/10_44.png" alt="" width="100%">
-                                </div>  
                             </div>
                         </div>
                     </div>    
@@ -1172,7 +1166,6 @@
             </div>
         </main>
         <footer class="footBox">
-            <footer class="footBox">
             <div class="footboxword">
                 <a>关于我们</a>
                 <span>|</span>
@@ -1190,51 +1183,13 @@
                 <span>|</span>
                 <a>视频搜索</a>
             </div>
-            <br>
-            <div class="footboximg"></div>
-        </footer>
+            <div class="footboximg">
+                <img src="./IMG/15_03.png" width="100%">
+            </div>
         </footer>
     </div>
 
 
-    <script>
-        let btnArr = document.querySelectorAll('.tablist');
-        let listArr = document.querySelectorAll('.miniBox');
-        btnArr.forEach((item, index) => {
-            item.addEventListener('click', function() {
-                document.querySelector('.btnActive').classList.remove('btnActive');
-                item.classList.add('btnActive');
-                listArr.forEach((childItem, ii) => {
-                    if (index == ii) {
-                        // console.log('index', index)
-                        childItem.classList.add('activeDiv');
-                    } else {
-                        childItem.classList.remove('activeDiv');
-                    }
-                })
-            })
-        })
-        console.log(btnArr);
-        console.log(listArr);
-        let tabList = document.querySelectorAll('.leaf');
-        tabList.forEach((item, index) => {
-            item.addEventListener('click', function() {
-                if (index == 0) {
-                    document.querySelector('.inputName').value = '例如：荷棠鱼坊烧鱼或樱花日本料理'
-                } else if (index == 1) {
-                    document.querySelector('.inputName').value = '11111'
-                } else if (index == 2) {
-                    document.querySelector('.inputName').value = '22222'
-                } else if (index == 3) {
-                     document.querySelector('.inputName').value = '33333'
-                } else if (index == 4) {
-                     document.querySelector('.inputName').value = '44444'
-                }
-            })
-        })
-        document.querySelector('.inputName').addEventListener('click', function() {
-            this.value = ''
-        })
-    </script>
+    <script src="./page.js"></script>
 </body>
 </html> 

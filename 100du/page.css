@@ -4,13 +4,14 @@
     list-style: none;
 }
 .box {
-    width: 70vw;
+    width: 1200px;
     min-width: 1024px;
     height: 100vh;
     
     margin: 0 auto;
 }
 .headBox {
+    width: 1200px;
     /* height: 240px; */
     /* background-color: green; */
     background-color: #f4f4f4;
@@ -20,14 +21,32 @@
     /* height: calc(100vh - 280px); */
     /* background-color: orange;
 } */
+.mainBox {
+    width: 1200px;
+    margin: 0 auto;
+}
 .mainBox::after {
+    width: 1200px;
     content: '';
     display: block;
     clear: both;
 }
 .footBox {
-    height: 40px;
-    background-color: yellowgreen;
+    width: 1200px;
+    height: 80px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footboxword, .footboximg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 .main_left {
     width: 80%;
@@ -79,8 +98,7 @@ a:hover {
 } 
 .header .link a.icon2 {
 	background-position: 0 -40px;
-}
- */
+} */
 .ullist1 {
     display: flex;
     float: right;
@@ -790,12 +808,12 @@ p {
 }
 .mainbox7 {
     display: flex;
-    gap: 10px;
     justify-content: space-between;
+    width: 100%;
 }
 .minibox12 {
     border: 1px solid #f4f4f4;
-    width: 47%;
+    width: 49%;
     /* height: 280px; */
     padding: 8px 25px;
     box-sizing: border-box;
@@ -803,7 +821,7 @@ p {
 }
 .minibox13 {
     border: 1px solid #f4f4f4;
-    width: 47%;
+    width: 49%;
     /* height: 280px; */
 }
 .textbox13 {
@@ -978,7 +996,7 @@ p {
 }
 .rightbox1 {
     /* height: 200px; */
-    width: 200px;
+    width: 100%;
     border: 1px solid #f4f4f4;
 }
 .rightbox1 .rightbox1_head {
@@ -1085,8 +1103,10 @@ p {
 
 }
 .rightbox4{
+    width: 100%;
+    margin: 0;
     position: relative;
-    padding: 10px;
+    padding: 5px;
     box-sizing: border-box;
 }
 .big16 {
@@ -1129,7 +1149,7 @@ p {
     font-size: larger;
 }
 .footBox {
-    width: 1030px;
+    width: 1200px;
     height: 80px;
     border-radius: 8px;
     border: 1px solid #DFDFDF;
@@ -1138,16 +1158,47 @@ p {
     background: white;
     margin-bottom: 50px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;  /* 垂直排列 */
+    justify-content: center; /* 垂直居中 */
+    align-items: center;     /* 水平居中 */
+    gap: 10px;               /* 设置间距（替代<br>） */
 }
 .footboximg {
-    width: 800px;
-    height: 25px;
-    background: url(./IMG/15_03.png) no-repeat;
+    width: 500px;
+    height: 35px;
     display: flex;
-    margin-left: 300px;
+    justify-content: center;   /* 水平居中 */
+    align-items: center;
+    margin: 0 auto;            /* 兼容性居中 */
 }
 .footboxword{
     font-size: 12px;
-    padding-top: 20px;
-    margin-left: 285px;
+    padding-top: 0;
+}
+
+/* 新增样式 */
+.hot-guest-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.hot-guest-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 其他样式可复用 .big1 */
+}
+
+.hot-guest-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 每行4张图，自动分配宽度 */
+    gap: 5px; /* 图片间距 */
+    padding: 10px;
+}
+
+.hot-guest-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* 保证图片不变形 */
 }
