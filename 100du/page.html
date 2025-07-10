@@ -13,7 +13,7 @@
             <div class="head_top">
                 <ul class="ullist">
                     <li class="list0"><a>切换城市：</a></li>
-                    <li class="list1"><a>北京</a></li>
+                    <li class="list1"><a href="https://www.baidu.com" target="_blank">北京</a></li>
                     <li class="list2"><a>上海</a></li>
                     <li class="list3"><a>福州</a></li>
                     <li class="list4"><a>广州</a></li>
@@ -102,9 +102,8 @@
                     <div class="imgbox">
                         <img src="./IMG/2.png" width="100%">
                     </div>
-                    
                     <div class="box4">
-                        <input type="text" style="width: 300px; height: 35px;border-radius: 10px;" placeholder="例如：荷棠鱼坊烧鱼或樱花日本料理" >
+                        <input class="inputName" onfocus="this.placeholder = ''" type="text" style="width: 300px; height: 35px;border-radius: 10px;" placeholder="例如：荷棠鱼坊烧鱼或樱花日本料理" >
                     </div>
                     <div class="box6">金钱豹、大江南、湘水之珠、德禹楼
 荷塘鱼坊烤鱼、SOHO尚都、湘味楼⋯</div>
@@ -238,10 +237,10 @@
                                 <img src="./IMG/8_14_03.png" width="100%">
                             </div>
                         </div>
-                        <div class="miniBox">22222
+                        <div class="miniBox">
                             <div class="minibox6">
                                 <div class="imgbox9">
-                                    <img src="./IMG/8_06.png" width="100%">
+                                    <img src="./IMG/IMG_7295 2.JPG" width="100%">
                                 </div>
                                 <div class="imgbox12">
                                     <img src="./IMG/7_03_03.png" width="100%">
@@ -260,7 +259,7 @@
                             </div>
                             <div class="minibox6">
                                 <div class="imgbox9">
-                                    <img src="./IMG/8_06.png" width="100%">
+                                    <img src="./IMG/IMG_7295 2.JPG" width="100%">
                                 </div>
                                 <div class="imgbox12">
                                     <img src="./IMG/7_03_03.png" width="100%">
@@ -279,7 +278,7 @@
                             </div>
                             <div class="minibox6">
                                 <div class="imgbox9">
-                                    <img src="./IMG/8_06.png" width="100%">
+                                    <img src="./IMG/IMG_7295 2.JPG" width="100%">
                                 </div>
                                 <div class="imgbox12">
                                     <img src="./IMG/7_03_03.png" width="100%">
@@ -776,29 +775,29 @@
                                 <div class="imgbox31">
                                     <img src="./IMG/14_03.png" alt="" width="100%">
                                 </div>
-                                <div>日本最大的财经杂志《钻石周刊》对100度享乐网的报道</div>
+                                <span>日本最大的财经杂志《钻石周刊》对100度享乐网的报道</span>
                                 
 
                             </div>
-                            <div class="minibig2">
+                            <div class="minibig1">
                                  <div class="imgbox32">
                                     <img src="./IMG/14_09.png" alt="" width="100%">
                                  </div>
-                                 <div>视频网站100度享乐网获网络视听许可证</div>
+                                 <span>视频网站100度享乐网获网络视听许可证</span>
 
                             </div>
-                            <div class="minibig3">
+                            <div class="minibig1">
                                  <div class="imgbox33">
                                     <img src="./IMG/14_12.png" alt="" width="100%">
                                  </div>
-                                 <div>互联网上的视频橱窗</div>
+                                 <span>互联网上的视频橱窗</span>
 
                             </div>
-                            <div class="minibig4">
+                            <div class="minibig1">
                                  <div class="imgbox34">
                                     <img src="./IMG/14_14.png" alt="" width="100%">
                                  </div>
-                                 <div>享乐主义的机会</div>
+                                 <span>享乐主义的机会</span>
 
                             </div>
                         </div>
@@ -817,7 +816,7 @@
                             <input type="text"style="width: 60px; height: 12px;border-radius: 5px;" id="name">
                             <br/>
                             <label for="pwd">密码：</label>
-                            <input type="text" style="width: 60px; height: 12px;border-radius: 5px;" id="pwd"> 
+                            <input type="password" style="width: 60px; height: 12px;border-radius: 5px;" id="pwd"> 
                         </div>
                         <div class="inputtext1">
                             <!-- <label for="xinbie">性别：</label> -->
@@ -1217,6 +1216,25 @@
         })
         console.log(btnArr);
         console.log(listArr);
+        let tabList = document.querySelectorAll('.leaf');
+        tabList.forEach((item, index) => {
+            item.addEventListener('click', function() {
+                if (index == 0) {
+                    document.querySelector('.inputName').value = '例如：荷棠鱼坊烧鱼或樱花日本料理'
+                } else if (index == 1) {
+                    document.querySelector('.inputName').value = '11111'
+                } else if (index == 2) {
+                    document.querySelector('.inputName').value = '22222'
+                } else if (index == 3) {
+                     document.querySelector('.inputName').value = '33333'
+                } else if (index == 4) {
+                     document.querySelector('.inputName').value = '44444'
+                }
+            })
+        })
+        document.querySelector('.inputName').addEventListener('click', function() {
+            this.value = ''
+        })
     </script>
 </body>
 </html> 
